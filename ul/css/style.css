@@ -1,0 +1,18 @@
+﻿body {background:#fff;}
+.c888 {color:#888;}
+.c069eb3 {color:#069eb3;}
+.cb8b8b8 {color:#b8b8b8;}
+.bgf4f4f4 {background:#f4f4f4;}
+.bgfff {background:#fff;}
+.f1246 {font:12px/46px "宋体";}
+.tac {text-align:center;}
+.oh {overflow:hidden;}
+
+.sel {margin:30px auto;width:958px;border:1px solid #ddd;}
+.selL {width:100px;}
+.selRList {width:805px;height:46px;padding:0 0 0 10px;}
+.selRList li {float:left;width:70px;margin-right:55px;text-align:center;font:12px/46px "宋体";}
+.selRList li a {color:#069eb3;padding:7px 10px;}
+.selRList li a:hover,.selR li .on {background:#d9eef1;}
+.selBtn {background:#fff url(../img/a.png) no-repeat 16px -46px;width:43px;height:46px;outline:none;}
+.selBtn.on {background-position:16px 0;}
