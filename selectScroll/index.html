@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8"/>
+    <meta name="renderer" content="webkit">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="telephone=no" name="format-detection"/>
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+    <meta name="viewport" content="width=device-width,maximum-scale=1.0,initial-scale=1, user-scalable=no"/>
+
+    <link rel="stylesheet" href="style/reset.css"/>
+    <link rel="stylesheet" href="style/common.css"/>
+    <link rel="stylesheet" href="style/addus.css"/>
+
+    <title>模拟select滚动选择2D</title>
+</head>
+<body>
+        
+<div class="birthday clearfix">
+	<div class="fl">
+	  <div class="inputName">出生日期<span></span></div>
+	</div>
+	<div class="inputText textright clearfix"><img class="down fr" src="imgs/down.png"/><div class="content fr ellipsis" id="data">请选择</div></div>
+</div>
+
+<div class="shade"></div>
+<!--brithday弹窗-->
+<div class="select">
+	<div class="box">
+		<div class="title">
+			<div class="fl textleft blue selectcancel">取消</div> 
+			<div class="fl textcenter">选择出生日期</div> 
+			<div class="fr textright blue selectok">确定</div> 
+		</div>
+	</div>
+	<div class="selectMask"></div>
+	<div class="posr list lr-mar-24">
+		<div id="selectScroll1" class="selectScroll bord4d4d4">
+			<div id="selectCon1" class="selectCon"></div>
+		</div>
+		<div id="selectScroll2" class="selectScroll bord4d4d4">
+			<div id="selectCon2" class="selectCon">
+				<div class="option"></div>
+				<div class="option">1</div>
+				<div class="option">2</div>
+				<div class="option">3</div>
+				<div class="option">4</div>
+				<div class="option">5</div>
+				<div class="option">6</div>
+				<div class="option">7</div>
+				<div class="option">8</div>
+				<div class="option">9</div>
+				<div class="option">10</div>
+				<div class="option">11</div>
+				<div class="option">12</div>
+				<div class="option"></div>
+			</div>
+		</div>
+		<div id="selectScroll3" class="selectScroll">
+			<div id="selectCon3" class="selectCon">
+				<div class="option"></div>
+				<div class="option">1</div>
+				<div class="option">2</div>
+				<div class="option">3</div>
+				<div class="option">4</div>
+				<div class="option">5</div>
+				<div class="option">6</div>
+				<div class="option">7</div>
+				<div class="option">8</div>
+				<div class="option">9</div>
+				<div class="option">10</div>
+				<div class="option">11</div>
+				<div class="option">12</div>
+				<div class="option">13</div>
+				<div class="option">14</div>
+				<div class="option">15</div>
+				<div class="option">16</div>
+				<div class="option">17</div>
+				<div class="option">18</div>
+				<div class="option">19</div>
+				<div class="option">20</div>
+				<div class="option">21</div>
+				<div class="option">22</div>
+				<div class="option">23</div>
+				<div class="option">24</div>
+				<div class="option">25</div>
+				<div class="option">26</div>
+				<div class="option">27</div>
+				<div class="option">28</div>
+				<div class="option">29</div>
+				<div class="option">30</div>
+				<div class="option">31</div>
+				<div class="option"></div>
+			</div>
+		</div>
+	</div>
+	<div class="selNoUse selNoUse1"></div>
+	<div class="selNoUse selNoUse2"></div>
+	<div class="selNoUse selNoUse3"></div>
+</div>
+</body>
+<script src="bower_components/zepto/zepto.min.js"></script>
+<script src="bower_components/iscroll/build/iscroll.js"></script>
+
+<script src="lib/touch.js"></script>
+<script src="lib/fx.js"></script>
+
+<script src="js/config.js"></script>
+<script src="js/addus.js"></script>
+
+</html>

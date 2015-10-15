@@ -1,0 +1,12 @@
+{
+  "name": "effect-moni-ul",
+  "version": "0.0.1",
+  "dependencies": {
+    "zepto": "1.1.6",
+    "iscroll": "5.1.3"
+  },
+  "devDependencies": {
+  },
+  "appPath": "effect-moni-ul",
+  "moduleName": "effect-moni-ul"
+}

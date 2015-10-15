@@ -5,4 +5,5 @@
 ## 目录 ##
 
 1. ul文件夹，模拟UL下拉（pc端）
-1. keyboard文件夹，模拟键盘（移动端）
+2. keyboard文件夹，模拟键盘（移动端）
+3. selectScroll文件夹，模拟select滚动选择2D（移动端）
