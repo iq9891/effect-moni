@@ -1,0 +1,119 @@
+.birthday {
+	height:50px;
+	line-height: 50px;
+	border-bottom:1px solid #d4d4d4;
+}
+
+.birthday .inputName {
+	margin-left: 12px;
+	color:#303233;
+}
+
+.birthday .inputText{
+	margin-left: 120px;
+	margin-right: 12px;
+}
+.content{
+	width:70%;
+	margin:0 auto;
+	text-align: left;
+}
+.down{
+	width:18px;
+	height:10px;
+	margin-top:20px;
+}
+.shade{
+	position: fixed;
+	top:0px;
+	left:0px;
+	right:0px;
+	bottom:0px;
+	background: rgba(0,0,0,0.5);
+	z-index: 7;
+	display: none;
+}
+
+.brithinput{
+	min-height: 206px;
+	width:100%;
+	background: #fff;
+	border-top:1px solid #6b6b6b;
+	position: fixed;
+	z-index: 8;
+	position: fixed;
+	bottom: -205px;
+	left:0px;
+	right: 0px;
+	display: none;
+}
+.brithinput .box{
+	background: #f7f7f8;
+	width:100%;
+}
+
+.brithinput .title{
+	height:44px;
+	line-height: 44px;
+}
+
+.brithinput .title div{
+	width:30%;
+}
+
+.blue{
+	color:#007aff;
+}
+
+.brithtext{
+	width:100%;
+	margin-top:45px;
+	margin-bottom:45px;
+	border-top:1px solid #cdcdcd;
+	border-bottom:1px solid #cdcdcd;
+}
+.brithtext div{
+	width:70%;
+	margin:0 auto;
+	height:50px;
+	line-height: 50px;
+
+	text-align: center;
+}
+
+.day,.mouth,.year{
+	width:50px;
+	height:50px;
+	text-align: center;
+	display: inline-block;
+}
+
+.keyboard{
+	height:200px;
+}
+
+.keyboard .num{
+	width:33%;
+	float: left;
+	height:50px;
+	line-height: 50px;
+	text-align: center;
+	font-weight: 600;
+	border-top:1px solid #aaa;
+	border-left:1px solid #aaa;
+}
+.keyboard .first{
+	border-left:0;
+}
+
+.del{
+	background: url("../imgs/del.png") no-repeat center center;
+	background-size:14px 12px;
+	height:12px;
+	line-height: 12px;
+	width:20px;
+	display: inline-block;
+}
+
+.brithinput .title .cancel {padding-left:12px;}
+.brithinput .title .ok {padding-right:12px;}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8"/>
+    <meta name="renderer" content="webkit">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="telephone=no" name="format-detection"/>
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+    <meta name="viewport" content="width=device-width,maximum-scale=1.0,initial-scale=1, user-scalable=no"/>
+
+    <link rel="stylesheet" href="style/reset.css"/>
+    <link rel="stylesheet" href="style/common.css"/>
+    <link rel="stylesheet" href="style/addus.css"/>
+
+    <title>模拟键盘</title>
+</head>
+<body>
+<div class="birthday clearfix">
+	<div class="fl">
+	  <div class="inputName">出生日期<span></span></div>
+	</div>
+	<div class="inputText textright clearfix">
+		<img class="down fr" src="imgs/down.png"/>
+		<div class="content fr ellipsis" id="data">请选择</div>
+	</div>
+</div>
+<div class="shade"></div>
+<!--brithday弹窗-->
+<div class="brithinput">
+	<div class="box">
+		<div class="title">
+			<div class="fl textleft blue cancel">取消</div> 
+			<div class="fl textcenter">请输入日期</div> 
+			<div class="fr textright blue ok">确定</div> 
+		</div>
+	</div>
+	<div class="brithtext">
+		<div>
+			<input class="year" maxlength="4"  placeholder='年' readonly/>
+			<span>-</span>
+			<input class="mouth" maxlength="2" placeholder='月' readonly/>
+			<span>-</span>
+			<input class="day" maxlength="2" placeholder='日' readonly />
+		</div>
+	</div>
+	<div class="keyboard">
+		<div class="num first" index="1" >1</div>
+		<div class="num" index="2" >2</div>
+		<div class="num" index="3" >3</div>
+		<div class="num first" index="4" >4</div>
+		<div class="num" index="5" >5</div>
+		<div class="num" index="6" >6</div>
+		<div class="num first" index="7" >7</div>
+		<div class="num" index="8" >8</div>
+		<div class="num" index="9" >9</div>
+		<div class="num first" index="" ></div>
+		<div class="num" index="0" >0</div>
+		<div class="num" index="del" ><span class="del"></span></div>
+	</div>
+</div>
+<script src="bower_components/zepto/zepto.min.js"></script>
+<script src="bower_components/iscroll/build/iscroll.js"></script>
+
+<script src="lib/touch.js"></script>
+<script src="lib/fx.js"></script>
+
+<script src="js/config.js"></script>
+<script src="js/addus.js"></script>
+</body>
+</html>
