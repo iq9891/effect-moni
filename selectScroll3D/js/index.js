@@ -34,14 +34,20 @@ $(function(){
 	
 	//li布局
 	$li.each(function(i,e){
+
 		var y = r*Math.cos(i*iDegPer*Math.PI/180)+$div.height()-112,
 			z = r*Math.sin(i*iDegPer*Math.PI/180);
+
+		y = y.toFixed(2);
+		z = z.toFixed(2);
+
 		$(e).css({
 			'-webkit-transform': 'translate3d('+150+'px, '+ y +'px, '+ z +'px) rotateX('+(-90+i*iDegPer)+'deg)'
 		});
 		$li2.eq(i).css({
 			'-webkit-transform': 'translate3d('+150+'px, '+ y +'px, '+ z +'px) rotateX('+(-90+i*iDegPer)+'deg)'
 		});
+
 	});
 
 	$div.on({
@@ -78,17 +84,18 @@ $(function(){
 	}
 	
 	function moveEnd(){
-		$(document).unbind();
+		$(document).off();
 		bufferFn();
 	}
-
+	
+	//移动完的滚动缓停
 	function bufferFn(){
 		
 		clearInterval(oTim);
 		
 		oTim = setInterval(function(){
 			oSpeedY *= 0.98;
-			iDeg = (iDeg+(bTop?1:-1)*oSpeedY);
+			iDeg = iDeg+(bTop?1:-1)*oSpeedY;
 			$ul.css({
 				'-webkit-transform': 'rotateX('+iDeg+'deg)'
 			});
@@ -98,10 +105,11 @@ $(function(){
 				var iIndex = Math.round(iDeg/iDegPer-3);
 				
 				iDeg = (iIndex-1)*iDegPer+iStartDeg;
-				
 				$ul.css({
 					'-webkit-transform': 'rotateX('+iDeg+'deg)'
-				});
+				}).addClass('anim').on('webkitTransitionEnd', function(){
+					$ul.off().removeClass('anim');
+				})
 
 				iOldY = 0;
 				oSpeedY = 0;
